@@ -1,32 +1,35 @@
 import React,{Component} from 'react'
 import Table from './Table'
-
 import products from './products.json'
+
 import Form from './Form'
 
 
 
 class App extends React.Component{
+	
 	state = {
 		characters: [
       {
-        name: 'Charlie',
-        job: 'Janitor',
+        name: 'End reading tutorial',
+        job: 'JSON intro',
       },
       {
-        name: 'Mac',
-        job: 'Bouncer',
+        name: 'Cook dinner',
+        job: 'Do not forget meat!',
       },
       {
-        name: 'Dee',
-        job: 'Aspring actress',
+        name: 'Walk with dog',
+        job: '...and buy some dishes for him',
       },
       {
-        name: 'Dennis',
-        job: 'Bartender',
+        name: 'Call mom',
+        job: "It's matter",
       },
     ]
 	}
+	
+	
 	
 	removeCharacter = (index) => {
 		const {characters} = this.state
@@ -34,19 +37,23 @@ class App extends React.Component{
 		this.setState({
 			characters : characters.filter((character, i) => {
 				return i!== index
+				
 			})
 		})
 	}
 	
-	handleSubmit = (character) => {
+				
+	handleSubmit = (character) => {		
 		this.setState({characters: [...this.state.characters, character]})
 	}
 
 	render(){
-		const {characters} = this.state
+		const characters = this.state.characters
+		
 		return(
 		
 		<div className="container">
+			
 			<Table characterData = {characters} removeCharacter={this.removeCharacter}/>
 			<Form handleSubmit = {this.handleSubmit} />
 		</div>
