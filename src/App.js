@@ -23,7 +23,7 @@ class App extends React.Component{
         job: '...and buy some dishes for him',
       },
       {
-        name: 'Call mom',
+        name: 'Call mom!',
         job: "It's matter",
       },
     ]
