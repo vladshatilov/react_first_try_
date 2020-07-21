@@ -45,6 +45,7 @@ class App extends React.Component{
 		this.setState({characters: [...this.state.characters, character]})
 	}
 
+
 	render(){
 		const characters = this.state.characters
 		
