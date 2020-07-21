@@ -1,7 +1,12 @@
 import React,{Component} from 'react'
 import Table from './Table'
+<<<<<<< HEAD
 import products from './products.json'
 
+=======
+import products from './products.json'
+
+>>>>>>> 8d13e09a2d43c809f0f33d346da4c4928b026516
 import Form from './Form'
 
 
@@ -71,11 +76,19 @@ class App extends React.Component{
 		let characters = this.chartry
 		
 		return(
+<<<<<<< HEAD
 		
 		<div className="container">
 			<Form handleSubmit = {this.handleSubmit} />
 			<Table characterData = {characters} handleDeleteRow={this.handleDeleteRow}/>
 			
+=======
+		
+		<div className="container">
+			<Form handleSubmit = {this.handleSubmit} />
+			<Table characterData = {characters} handleDeleteRow={this.handleDeleteRow}/>
+			
+>>>>>>> 8d13e09a2d43c809f0f33d346da4c4928b026516
 		</div>
 		)
 	}	
