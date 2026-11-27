@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-json-table": "^0.1.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "homepage": "https://vladshatilov.github.io/react_first_try_",
   "scripts": {
